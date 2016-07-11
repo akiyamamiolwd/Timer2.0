@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textColor="#dd0021"
+        android:gravity="center"
+        android:text="*计时器*"
+        android:background="#beb6a9"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#31a9ea">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="#DD6600"
+            android:id="@+id/text1"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="蹲坑预警"
+            android:background="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#DD6600"
+            android:id="@+id/text2"
+            android:text="苹果时钟" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#DD6600"
+            android:id="@+id/text3"
+            android:text="计时秒表" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF68F">
+        <ProgressBar
+            android:id="@+id/bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:onClick="onClick"
+            android:visibility="visible"
+            />
+        <TextView
+            android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="小天天"
+            android:visibility="invisible"/>
+        <ProgressBar
+            android:id="@+id/bar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            />
+        <TextView
+            android:id="@+id/tab3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="小田田"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+</LinearLayout>
